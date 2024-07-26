@@ -1,0 +1,241 @@
+*{-webkit-tap-highlight-color: transparent; display:flex; text-decoration: none;}
+
+head{display: none;}
+
+body
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    padding-bottom: 100px;
+}
+
+.mob_topbar {
+    width: 100%;
+    margin: 0;
+    padding: 5.33vw 0;
+}
+
+.logo {
+    font: 6.67vw inter-reg;
+    margin: auto auto auto 5.33vw;
+    color: #4C3BCF;
+}
+
+.span1 {
+    font-family:inter-bold;
+}
+
+.ham, .hamopen {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5.33vw auto auto;
+    cursor: pointer;
+    padding: 1.33vw;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ham div, .hamopen div {
+    display: flex;
+    width: 8vw;
+    height: 1.07vw;
+    background-color: #402E7A;
+    border-radius: 50px;
+    margin: 0.4vw 0;
+    transition: 0.5s;
+}
+
+.hamopen div:nth-child(1) {
+    transform: translateY(1.87vw) rotate(45deg);
+}
+
+.hamopen div:nth-child(2) {
+    transform: translateX(16vw);
+}
+
+.hamopen div:nth-child(3) {
+    transform: translateY(-1.87vw) rotate(-45deg);
+}
+
+.sidebar, .sideopen {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    background-color: #402E7A;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.sideopen {
+    width: 80vw;
+}
+
+.sidebar a, .sideopen a {
+    display: flex;
+    font-size: 4vw;
+    width: 74.67vw;
+    font-family: inter-reg;
+    color: white;
+    margin: 5.33vw auto 0 5.33vw;
+    text-decoration: none;
+}
+
+.heading {
+    font: 4vw inter-bold;
+    letter-spacing: 0.53vw;
+    color: #3a3a3a;
+    margin: 13.33vw auto 0 5.33vw;
+}
+
+.applications {
+    margin: 13.33vw auto 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2.67vw;
+}
+
+.job {
+    flex-direction: column;
+    width: 80vw;
+    padding: 5.33vw;
+    border-radius: 2.67vw;
+    margin: auto;
+    background-color: #3dc3ec1a;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2.67vw 9.6vw 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.job p:nth-child(1) img {
+    width: 6.67vw;
+    height: 6.67vw;
+}
+
+.job span {
+    margin: 0 0 auto auto;
+    cursor: pointer;
+}
+
+.job p:nth-child(1) {
+    width: 100%;
+    font: 4.8vw inter-bold;
+    margin: 0 auto 0 0;
+    color: #3a3a3a;
+}
+
+.job p:nth-child(2) {
+    font: 4vw inter-med;
+    margin: 1.33vw auto 0 0;
+    color: #4C3BCF;
+}
+
+.job p:nth-child(3) {
+    font: 3.2vw inter-reg;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto 0 0;
+}
+
+.job p:nth-child(4) {
+    font: 3.2vw inter-reg;
+    margin: 1.87vw auto 0 0;
+    color: #3a3a3a;
+}
+
+.job a {
+    font: 3.47vw inter-med;
+    letter-spacing: 0.53vw;
+    padding: 1.87vw 5.33vw;
+    background-color: #4B70F5;
+    color: white;
+    margin: 4vw auto 0 0;
+    border-radius: 2.67vw;
+}
+
+.pc_topbar{
+    display: none;
+}
+
+@media screen and (min-width:800px){
+    .mob_topbar, .sidebar{display:none}
+
+    .pc_topbar {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 1.58vw 0;
+    }
+    
+    .pc_topbar a {
+        font: 1.19vw inter-reg;
+        margin: auto 1.58vw auto 0;
+        color: #3A3A3A;
+    }
+    
+    .pc_topbar a:hover {
+        color: #3DC2EC;
+    }
+    
+    .logo {
+        font: 2.37vw inter-reg;
+        margin: auto auto auto 2.37vw;
+    }
+    
+    .span1 {
+        font-family: inter-bold;
+    }
+    
+    .heading {
+        font: 1.19vw inter-bold;
+        letter-spacing: 0.16vw;
+        margin: 3.96vw auto 0 2.37vw;
+    }
+    
+    .applications {
+        margin: 3.96vw auto 0 auto;
+        max-width: 95vw;
+    }
+    
+    .job {
+        width: 23.74vw;
+        padding: 1.58vw;
+        border-radius: 0.79vw;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 0.79vw 2.85vw 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.08vw;
+        margin: 0.79vw 0.79vw 0 0;
+    }
+    
+    .job p:nth-child(1) img {
+        width: 1.98vw;
+        height: 1.98vw;
+    }
+    
+    .job p:nth-child(1) {
+        width: 100%;
+        font: 1.42vw inter-bold;
+    }
+    
+    .job p:nth-child(2) {
+        font: 1.19vw inter-med;
+        margin: 0.4vw auto 0 0;
+    }
+    
+    .job p:nth-child(3) {
+        font: 0.95vw inter-reg;
+    }
+    
+    .job p:nth-child(4) {
+        font: 0.95vw inter-reg;
+        margin: 0.55vw auto 0 0;
+    }
+    
+    .job a {
+        font: 1.03vw inter-med;
+        letter-spacing: 0.16vw;
+        padding: 0.55vw 1.58vw;
+        margin: 1.19vw auto 0 0;
+        border-radius: 0.79vw;
+    }
+}
