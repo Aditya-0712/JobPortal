@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Job Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/css/application.css">
+        <link rel="stylesheet" href="../public/css/fonts.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="" class="back"><img src="../public/images/back.svg" alt="back" /></a>
+            <p class="logo">Jobs<span class="span1">Portal</span></p>
+        </div>
+        <p class="heading">Application Form</p>
+
+        <form autocomplete="off">
+            <div class="row"><p class="p">FIRST NAME</p><p class="tmp1">LAST NAME</p></div>
+            <div class="row" style="margin-top: 10px;">
+                <input type="text" placeholder="e.g John" name="fname" class="inp2" />
+                <input type="text" placeholder="e.g Doe" name="lname" class="inp3"/>
+            </div>
+            <p class="sub">MOBILE NUMBER</p>
+            <input type="number" placeholder="e.g 1234567890" name="phno" maxlength="10"/>
+
+            <p class="sub">COUNTRY</p>
+            <input type="text" placeholder="e.g Canada" name="country" class="inp" />
+
+            <p class="sub">LATEST DEGREE</p>
+            <input type="text" placeholder="e.g Masters in Science" name="degree" class="inp" />
+
+            <p class="sub">COVER LETTER</p>
+            <textarea placeholder="Write why you should be hired"></textarea>
+
+            <p class="sub">UPLOAD RESUME</p>
+            <a href="">Choose File</a>
+
+            <button type="submit">SUBMIT FORM</button>
+        </form>
+    </body>
+</html>
