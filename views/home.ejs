@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Job Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+    </head>
+    <body>
+        <div class="mob_topbar">
+            <p class="logo">Jobs<span class="span1">Portal</span></p>
+            <div class="ham" id="ham">
+                <div></div><div></div><div></div>
+            </div>
+        </div>
+
+        <div class="pc_topbar">
+            <p class="logo">Jobs<span class="span1">Portal</span></p>
+            <a href="">Categories</a>
+            <a href="">Bookmarks</a>
+            <a href="">Contacts</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            <a href="/post">Post a Job +</a>
+            <a href="">Premium</a>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <a href="">Categories</a>
+            <a href="">Bookmarks</a>
+            <a href="">Contacts</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            <a href="/post">Post a Job +</a>
+            <a href="">Premium</a>
+        </div>
+
+        <p class="heading">RECENT JOBS</p>
+
+        <div class="applications">
+            <% for (let i=0; i<arr.length; i++){ %>
+            <div class="job">
+                <p><%= arr[i].Job_title %><span><img src="../images/bookmark.svg" alt="bookmark" /></span></p>
+                <p><%= arr[i].Job_company %></p>
+                <p><%= arr[i].Job_loc %></p>
+                <p><%= arr[i].Job_details %></p>
+                <a href="">View Job Details</a>
+            </div>
+            <% } %>
+        </div>
+
+        <script src="../js/home.js"></script>
+    </body>
+</html>
