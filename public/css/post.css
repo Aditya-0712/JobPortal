@@ -1,0 +1,203 @@
+*{-webkit-tap-highlight-color: transparent; display:flex; text-decoration: none;}
+
+head{display: none;}
+
+body
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    padding-bottom: 100px;
+}
+
+.topbar {
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    font: 6.67vw inter-reg;
+    margin: auto 6.67vw auto auto;
+    color: #4C3BCF;
+}
+
+.span1 {
+    font-family: inter-bold;
+}
+
+.back {
+    margin: auto auto auto 0;
+    padding: 5.33vw;
+}
+
+.back img {
+    width: 6.67vw;
+    height: auto;
+}
+
+.heading {
+    font: 4.8vw inter-med;
+    margin: 13.33vw auto 0 6.67vw;
+    color: #3a3a3a;
+}
+
+form {
+    flex-direction: column;
+}
+
+.row {
+    margin: 8vw auto 0 8vw;
+}
+
+.row .p, .sub, .tmp1{
+    font: 3.2vw inter-med;
+    color: #4B70F5;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.inp2, textarea, .inp3, .inp, input[type="number"] {
+    font: 3.2vw inter-reg;
+    color: #3a3a3a;
+    padding: 1.87vw 2.67vw;
+    width: 26.67vw;
+    border-color: #4B70F5;
+    outline: 0;
+}
+
+.sub {
+    margin: 5.33vw auto 0 8vw;
+}
+
+input[type="number"], .inp, textarea {
+    margin: 2.67vw auto 0 8vw;
+    width: 53.33vw;
+}
+
+.inp {
+    width: 53.33vw;
+}
+
+textarea {
+    width: 75vw;
+    height: 26.67vw;
+    border-width: 0.53vw;
+    border-style: inset;
+    resize: vertical;
+    overflow: scroll;
+}
+
+a {
+    margin: 2.67vw auto 0 8vw;
+    font: 3.2vw sans-serif;
+    color: black;
+    padding: 1.87vw 2.67vw;
+    background-color: rgba(128, 128, 128, 0.183);
+    border: 0.27vw solid rgba(0, 0, 0, 0.432);
+}
+
+button {
+    display: block;
+    margin: 13.33vw auto 0 auto;
+    padding: 2.67vw 0;
+    width: 85vw;
+    font: 4vw inter-med;
+    background-color: #3DC2EC;
+    letter-spacing: 2px;
+    color: white;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tmp1 {
+    margin-left: 21.33vw;
+}
+
+.inp3 {
+    margin-left: 12.27vw;
+}
+
+@media screen and (min-width:800px){
+    .logo {
+        font: 1.98vw inter-reg;
+        margin: auto 1.98vw auto auto;
+    }
+    
+    .back {
+        padding: 1.58vw;
+    }
+    
+    .back img {
+        width: 1.98vw;
+    }
+    
+    .heading {
+        font: 1.42vw inter-med;
+        margin: 3.96vw auto 0 4.75vw;
+    }
+    
+    .row {
+        margin: 2.37vw auto 0 4.75vw;
+    }
+    
+    .row .p, .sub, .tmp1 {
+        font: 0.95vw inter-med;
+        letter-spacing: 0.16vw;
+    }
+    
+    .inp2, .inp, .inp3, textarea, input[type="number"] {
+        font: 0.95vw inter-reg;
+        padding: 0.55vw 0.79vw;
+        width: 7.92vw;
+    }
+    
+    .sub {
+        margin: 1.58vw auto 0 4.75vw;
+    }
+    
+    input[type="number"], .inp, textarea {
+        margin: 0.79vw auto 0 4.75vw;
+        width: 15.83vw;
+    }
+    
+    .inp {
+        width: 15.83vw;
+    }
+    
+    textarea {
+        width: 60vw;
+        height: 15.83vw;
+        border-width: 0.16vw;
+    }
+    
+    a {
+        margin: 0.79vw auto 0 4.75vw;
+        font: 0.95vw sans-serif;
+        padding: 0.55vw 0.79vw;
+        border: 0.08vw solid rgba(0, 0, 0, 0.432);
+    }
+    
+    button {
+        margin: 3.96vw auto 0 4.75vw;
+        padding: 0.79vw 0;
+        width: 20vw;
+        font: 1.19vw inter-med;
+        letter-spacing: 0.16vw;
+        border-radius: 0.4vw;
+    }
+    
+    button:hover {
+        outline: 0.16vw solid #4C3BCF;
+    }
+    
+    .tmp1 {
+        margin-left: 6.33vw;
+    }
+    
+    .inp3 {
+        margin-left: 3.64vw;
+    }
+    
+}
