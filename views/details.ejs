@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Job Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/details.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="/" class="back"><img src="../images/back.svg" alt="back" /></a>
+            <p class="logo">Jobs<span class="span1">Portal</span></p>
+        </div>
+        <div class="det">
+            <p><%= jtitle %></p>
+            <p><%= jcompany %></p>
+            <p><%= jloc %></p>
+            <p>Full Job Description</p>
+            <p><%= jdetails %></p>
+        </div>
+        <p class="temp">Skill Requirements</p>
+        <div class="skills">
+            <% for(let i=0; i<jskills.length; i++) {%>
+            <p><%= jskills[i] %></p>
+            <% } %>
+        </div>
+        <p class="temp">Salary</p>
+        <p class="tmp2"><%= jsalary %></p>
+
+        <p class="temp">Mode</p>
+        <p class="tmp2"><%= jmode %></p>
+
+        <a href="/application/<%= jobid %>" class="apply">APPLY NOW</a>
+        <a href="" class="apply" style="background-color: #3DC2EC; margin-top: 7px;">VISIT WEBSITE</a>
+    </body>
+</html>
