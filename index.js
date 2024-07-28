@@ -8,6 +8,7 @@ const slashRoute = require('./routes/slash');
 const slashPost = require('./routes/slashPost');
 const slashDetails = require('./routes/slashDetails');
 const slashApplication = require('./routes/slashApplication');
+const slashViewapps = require('./routes/slashViewapps');
 
 app.use(BP.urlencoded({extended:true}));
 app.use(exp.static(path.join('public')));
@@ -19,6 +20,7 @@ app.use(slashRoute);
 app.use(slashPost);
 app.use(slashDetails);
 app.use(slashApplication);
+app.use(slashViewapps);
 
 app.use((req,res) => {
     res.status(404).send('<h1>Page Does Not Exists, error 404</h1>');

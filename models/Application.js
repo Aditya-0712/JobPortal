@@ -21,4 +21,10 @@ module.exports = class addApplication{
         const upload = new Application({App_ID:this.App_ID, App_fname:this.App_fname, App_lname:this.App_lname, App_phno:this.App_phno, App_country:this.App_country, App_degree:this.App_degree, App_cover:this.App_cover, App_jobid:this.App_jobid, App_ID:this.App_ID});
         upload.save();
     }
+
+    static async findAppByJobid(jobid){
+        let temp;
+        await Application.find({App_jobid:jobid}).then(ans => {temp=ans;});
+        return temp;
+    }
 }

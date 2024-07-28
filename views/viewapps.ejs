@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Job Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/viewapp.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="/details/<%= jobid %>" class="back"><img src="../images/back.svg" alt="back" /></a>
+            <p class="logo">Jobs<span class="span1">Portal</span></p>
+        </div>
+
+        <div class="wrap">
+            <% for(let i=0; i<arr.length; i++){ %>
+            <div class="app">
+                <p>Application ID: <span><%= arr[i].App_ID %></span></p>
+                <p>Full Name: <span><%= arr[i].App_fname %> &nbsp <%= arr[i].App_lname %></span></p>
+                <p>Mobile Number: <span><%= arr[i].App_phno %></span></p>
+                <p>Country: <span><%= arr[i].App_country %></span></p>
+                <p>Education: <span><%= arr[i].App_degree %></span></p>
+            </div>
+            <% } %>
+        </div>
+    </body>
+</html>

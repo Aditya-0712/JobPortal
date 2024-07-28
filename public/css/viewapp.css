@@ -1,0 +1,102 @@
+*{-webkit-tap-highlight-color: transparent; display:flex; text-decoration: none;}
+
+head{display: none;}
+
+body
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    padding-bottom: 100px;
+}
+
+.topbar {
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    font: 6.67vw inter-reg;
+    margin: auto 6.67vw auto auto;
+    color: #4C3BCF;
+}
+
+.span1 {
+    font-family: inter-bold;
+}
+
+.back {
+    margin: auto auto auto 0;
+    padding: 5.33vw;
+}
+
+.back img {
+    width: 6.67vw;
+    height: auto;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    margin: 8vw auto 0 auto;
+    row-gap: 5.33vw;
+}
+
+.app {
+    width: 80vw;
+    margin: auto;
+    padding: 5.33vw;
+    border-radius: 1.33vw;
+    border: 0.27vw solid #3a3a3a39;
+    background-color: #4c3bcf38;
+    flex-direction: column;
+}
+
+.app p {
+    font: 3.47vw inter-bold;
+    margin: 0 auto 2.67vw 0;
+}
+
+.app p span {
+    font: 3.47vw inter-reg;
+    margin: auto auto auto 2.67vw;
+}
+
+@media screen and (min-width:800px){
+
+    .logo {
+        font: 2.38vw inter-reg;
+        margin: auto 2.38vw auto auto;
+    }
+    
+    .back {
+        padding: 1.58vw;
+    }
+    
+    .back img {
+        width: 2.38vw;
+    }
+    
+    .wrap {
+        margin: 2.38vw auto 0 4.75vw;
+        row-gap: 1.58vw;
+        column-gap: 3.17vw;
+    }
+    
+    .app {
+        width: 23.75vw;
+        padding: 1.58vw;
+        border-radius: 0.40vw;
+        margin: 0;
+    }
+    
+    .app p {
+        font: 1.03vw inter-bold;
+        margin: 0 auto 0.79vw 0;
+    }
+    
+    .app p span {
+        font: 1.03vw inter-reg;
+        margin: auto auto auto 0.79vw;
+    }    
+}
