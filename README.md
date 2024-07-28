@@ -1,7 +1,3 @@
-Here's a professional README for your GitHub repository:
-
----
-
 # Job Portal
 
 This project is a comprehensive job portal application built with modern web technologies. It provides a platform for job seekers to find and apply for jobs, and for employers to post job listings and review applications.
