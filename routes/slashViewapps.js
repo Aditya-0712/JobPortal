@@ -7,7 +7,6 @@ route.get('/viewapps/:jobid', async (req, res) => {
 
     let arr;
     await findAppByJobid(jobid).then(ans => {arr=ans;});
-    console.log(arr);
     const data = {arr:arr, jobid:jobid};
     res.render('viewapps', data);
 })

@@ -23,7 +23,7 @@ route.post('/Application/:jobid', async (req, res) => {
     obj.Append();
 
     await addApp(jobid, appid);
-    res.send("<h1>Application Submitted!</h1>");
+    res.send('<h1>Application Submitted Succesfully!</h1><a href="/">View Similar Jobs</a>')
 })
 
 module.exports = route;
