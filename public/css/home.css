@@ -86,18 +86,24 @@ body
     text-decoration: none;
 }
 
+.bg{
+    width:100%;
+    margin:0;
+    height: auto;
+}
+
 .heading {
     font: 4vw inter-bold;
     letter-spacing: 0.53vw;
     color: #3a3a3a;
-    margin: 13.33vw auto 0 5.33vw;
+    margin: 0 auto 0 5.33vw;
 }
 
 .applications {
     margin: 13.33vw auto 0 auto;
     width: 100%;
     flex-wrap: wrap;
-    gap: 2.67vw;
+    row-gap: 8vw;
 }
 
 .job {
@@ -143,6 +149,8 @@ body
     font: 3.2vw inter-reg;
     margin: 1.87vw auto 0 0;
     color: #3a3a3a;
+    height: 22.4vw;
+    overflow: hidden;
 }
 
 .job a {
@@ -155,12 +163,19 @@ body
     border-radius: 2.67vw;
 }
 
-.pc_topbar{
+.pc_topbar, .bg2{
     display: none;
 }
 
 @media screen and (min-width:800px){
-    .mob_topbar, .sidebar{display:none}
+    .mob_topbar, .sidebar, .bg{display:none}
+
+    .bg2{
+        display: flex;
+        margin:0 auto;
+        height: 27.705vw;
+        width: auto;
+    }
 
     .pc_topbar {
         display: flex;
@@ -173,10 +188,13 @@ body
         font: 1.19vw inter-reg;
         margin: auto 1.58vw auto 0;
         color: #3A3A3A;
+        transition: 0.2s;
+        padding: 0.792vw 0;
     }
     
     .pc_topbar a:hover {
         color: #3DC2EC;
+        transform: translateY(-10px);
     }
     
     .logo {
@@ -189,14 +207,16 @@ body
     }
     
     .heading {
-        font: 1.19vw inter-bold;
+        font: 1.425vw inter-bold;
         letter-spacing: 0.16vw;
-        margin: 3.96vw auto 0 2.37vw;
+        margin: 3.96vw auto 0 2.375vw;
     }
     
     .applications {
-        margin: 3.96vw auto 0 auto;
+        margin: 1.583vw auto 0 auto;
         max-width: 95vw;
+        row-gap: 3.166vw;
+        column-gap: 5.541vw;
     }
     
     .job {
@@ -204,7 +224,7 @@ body
         padding: 1.58vw;
         border-radius: 0.79vw;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 0.79vw 2.85vw 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.08vw;
-        margin: 0.79vw 0.79vw 0 0;
+        margin:0;
     }
     
     .job p:nth-child(1) img {
@@ -229,6 +249,7 @@ body
     .job p:nth-child(4) {
         font: 0.95vw inter-reg;
         margin: 0.55vw auto 0 0;
+        height: 6.966vw;
     }
     
     .job a {
@@ -237,5 +258,9 @@ body
         padding: 0.55vw 1.58vw;
         margin: 1.19vw auto 0 0;
         border-radius: 0.79vw;
+    }
+
+    .job a:hover{
+        outline: 2px solid #4C3BCF;
     }
 }
