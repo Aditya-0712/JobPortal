@@ -2,6 +2,7 @@ const exp = require('express');
 const addApplication = require('../models/Application');
 const { addApp } = require('../models/Jobs');
 const route = exp.Router();
+const path = require('path');
 
 route.get('/application/:jobid', async (req, res) => {
     const jobid = req.params.jobid;
@@ -23,7 +24,7 @@ route.post('/Application/:jobid', async (req, res) => {
     obj.Append();
 
     await addApp(jobid, appid);
-    res.send('<h1>Application Submitted Succesfully!</h1><a href="/">View Similar Jobs</a>')
+    res.sendFile(path.join(__dirname, '../', 'views', 'sent.html'));
 })
 
 module.exports = route;
